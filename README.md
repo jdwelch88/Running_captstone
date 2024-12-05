@@ -65,8 +65,8 @@ The data is pulled from multiple sources including mains websites from:
 
 ### Present key insights
     - The data attempts to predict average race pace by gender, elevation, and distance of a race.
-    - Males tend to run 0.5 mph faster than females on average regardless of elevation.
-    - Elevation, age, gender, and distance affect
+    - Males generally run faster than females on average.
+    - Elevation, age, gender, and distance affect average race pace.
     - Races below marathons may be skewed due to not having data for those distances.  Adding more data to those lower distances can increase the accuracy of the predicted model.
     
 
