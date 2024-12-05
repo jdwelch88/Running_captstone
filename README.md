@@ -18,7 +18,8 @@ Target data: mph (average race pace)
 
 
 ## Hypothesis
-    - I had four individual hypothesis ran in regards to my data to understand if it affects my target data or not.
+    - I had four individual hypothesis ran in regards to my data to understand if it affects 
+    my target data or not.
     - Gender signficantly affects average race pace.
     - Age significantly affects average race pace.
     - Average State Elevation affects average race pace.
