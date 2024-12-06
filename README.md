@@ -18,12 +18,14 @@ Target data: mph (average race pace)
 
 
 ## Hypothesis
-    - I had four individual hypothesis ran in regards to my data to understand if it affects 
+I had four individual hypothesis ran in regards to my data to understand if it affects 
     my target data or not.
     - Gender signficantly affects average race pace.
     - Age significantly affects average race pace.
     - Average State Elevation affects average race pace.
     - Distance affects average race pace.
+In this all four hypothesis are my alternative as shown above.  I failed to reject all 
+my hypothesis meaning all data had significant affects on my data.
 
 
 ## Table of Contents
@@ -59,7 +61,17 @@ The data is pulled from multiple sources including mains websites from:
 ### What visiualizations do we need to understand your topic?
     - Line plots of predictions and normal data
 
-## What visualizations display your results?
+## Results
+
+- Average Race Paces in Virginia for 31 mile runs
+#### ![Average Race Paces in Virginia for 31 mile runs](Images/real_avg_race_pace_virginia.png)
+
+- Average Race Paces in Colorado for 31 mile runs
+#### ![Average Race Paces in Colorado for 31 mile runs](Images/real_avg_race_pace_colorado.png)
+
+- Average Predicted Race Paces at Fort Eisenhower for 2 mile runs
+#### ![Average Predicted Race Paces at Fort Eisenhower for 2 mile runs](Images/pred_avg_race_pace_FEGA.png)
+
 - Average Predicted Race Paces at Fort Carson for 2 mile runs
 #### ![Average Predicted Race Paces at Fort Carson for 2 mile runs](Images/pred_avg_race_pace_Carson.png)
 
