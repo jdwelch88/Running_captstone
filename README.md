@@ -59,6 +59,14 @@ In all of my hypothesis above I failed to reject all my null hypothesis meaning 
 
 ## Analysis
 
+- Initial Pair Plot Analysis is showing distribution of variables between males (1) and females (0).
+- The pair plot likely shows that race pace generally decreases with increasing age for both genders.
+- The plots show a distinct separation between the race paces of males and females, with males generally having faster paces.
+- The rate at which race pace decreases with age might differ between males and females. This can be observed if the lines for males and females have different slopes.
+- The age distribution for both genders might show that certain age groups have more data points, which could affect the model's estimates.
+
+#### ![Pair plot of features](Images/pair_plot_features.png)
+
 - Average Race Paces in Virginia and Colorado for 31 mile runs
     - This shows the actual data of events at 489 feet of elevation for 31 mile runs as well as events at 6800 feet.  We are comparing Virginia versus Colorado in this instance for males versus female running data from 17 to 62 years old. The data insists that gender, age, and elevation has an impact on running.  There are outliers which is why the average race pace was taken versus the actual race pace.  Taking the average accounts for the ages that generally perform better than others.
 #### ![Average Race Paces in Virginia for 31 mile runs](Images/real_avg_race_pace_virginia.png)
