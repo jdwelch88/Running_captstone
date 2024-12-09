@@ -128,11 +128,12 @@ A box cox transformation was used for this predictive model ultimately. It gives
 - Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.
 
 
-### Tell us what you recommend
+### Recommendations
 - Recommend gathering racing data at distances shorter than 26 miles.  Where are the racers coming from when running different altitudes?  Are they coming from an area where they are already acclimated for high altitude?
 
-### Tell us what future areas you might want/need to study
+### Future areas of study
 - Consider studying Terrain type of events, i.e. desert, mountain, forest, beach and seasons to see if that affects runners performance.  See if adding weight and height can affect if possible.
+- Ultimately to keep this military related, do an analysis of the ACFT two mile run for each age group of males versus females at Fort Carson and Fort Eisenhower to compare how each group does. Include height and weight.
 
 
 ## Contributing
