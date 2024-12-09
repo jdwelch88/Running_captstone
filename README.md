@@ -74,17 +74,26 @@ A log transformation of the linear regression model was used to see if the data 
 
 While the MSE of this model was better fit to my data, it still showed linearity and was not best fit for the predictions.
 
-- The linear regression plot with log transformation of the residuals below still showed heteroscedasticity in the model.
+- The linear regression plot with log transformation of the residuals below still showed heteroscedasticity in the model but did fit better.
 
 #### ![Linear Regression with Log Transformation Residual Plot](Images/log_trans_res_plot.png)
 
-- We also see the same fit of actual data versus the predicted data from the transformation and looks very similar to the linear regression model.
+- We also see the same fit of actual data versus the predicted data from the transformation and looks very similar to the linear regression model.  A better transformation is needed for better and more accurate predictions.
 
 #### ![Linear Regression with Log Transformation Fit](Images/log_trans_reg_fit.png)
 
-
 ### Linear Regression with Box Cox Transformation
 
+A box cox transformation was used for this predictive model ultimately. It gives normality of residuals, more constant variance (Homoscedasticity, better fit, and reduced MSE).
+- Calculated Mean Squared Error: 0.012979636721184285
+- The calculated MSE was better than the linear regression and log transformation.  This method was more effective at minimizing the descrepancies between actual and predicted race paces.
+
+- When looking at the residuals plot we see the plot is more homoscedastic compared to the other residual plots for the linear regression models and log transformation.  How does the data look now compared to the fit of data compared to the predictions?
+#### ![Linear Regression with Box Cox Transformation](Images/box_cox_res_plot.png)
+
+- The model created a better fit of the data.  Ultimately allowing the analysis of predicted paces fitting better.  There is now significant improvement to the accuracy and reliability compared to using untransformed linear regression.
+
+#### ![Linear Regression with Box Cox Transformation](Images/box_cox_trans_fit.png)
 
 ## Predicted Outcomes
 
