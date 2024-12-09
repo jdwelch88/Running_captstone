@@ -49,6 +49,12 @@ I had four individual null hypothesis ran in regards to my data to understand if
     - Distance does not affects average race pace.
 In all of my hypothesis above I failed to reject all my null hypothesis meaning all data had significant affects on my data.
 
+## MVP
+
+    - Set data to specific units (intengers or floats) and not strings as they are continuous.  Set males and females to zeros and ones for gender.
+    - Compare linear regression, log model transformation, and other regression models to pick the best model for analysis.
+    - Use best model to perform a predictive analysis on average race pace from my features.
+
 
 ## Analysis
 
