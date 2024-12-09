@@ -65,7 +65,7 @@ Upon first utilizing the Linear Regression model, it was utilized due to my targ
 
 - In this model of the linear regression predictions we see that our predicted values of the average race pace are linear compared to the actual values.  This will show inconsistent results and ultimately show improper analysis fo the data. The thought process behind using another method is to find a transformation or regression model that will show more accurate results.
 
-#### ![Linear Regression Residuals Plot](Images/linear_reg_fit.png)
+#### ![Linear Regression Residuals Plot](Images/Linear_Reg_fit.png)
 
 ### Linear Regression with Log Transformation
 
