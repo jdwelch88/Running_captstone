@@ -1,4 +1,4 @@
-# Running_captstone
+# Ultra Marathon Running
 
 Affects on Running Performance - Galvanized Capstone Project
 
