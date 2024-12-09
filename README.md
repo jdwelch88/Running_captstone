@@ -13,6 +13,13 @@ As an avid runner, ultra marathon running is a passion of mine.  Ultra Marathon 
 
 ## Data
 
+- To see how my data was manipulated and transformed please look in the data folder at UM_data_top_100.csv. 
+- To see how the data was cleaned check the cleaning_data.ipynb
+- My initial hypothesis testing was conducted in running_hypothesis.ipynb
+- My full analysis was conducted in all_100_running_hypothesis.ipynb
+- My full regression analysis for my predictive model was conducted in the box_cox.ipynb
+- I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb
+
 Data was downloaded from Kaggle.com (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running)
 
 I cleaned the data to only pull the top 100 Ultra Marathon events by most participants in the United states.  I had to individually add the average state elevation of each race which included 25 states.
@@ -46,7 +53,7 @@ In all of my hypothesis above I failed to reject all my null hypothesis meaning 
 ## Analysis
 
 - Average Race Paces in Virginia and Colorado for 31 mile runs
-    - This shows the actual data of events at 489 feet of elevation for 31 mile runs as well as events at 6800 feet.  We are comparing Virginia versus Colorado in this instance for males versus female running data from 17 to 62 years old. The data insists that gender, age, and elevation has an impact on running.
+    - This shows the actual data of events at 489 feet of elevation for 31 mile runs as well as events at 6800 feet.  We are comparing Virginia versus Colorado in this instance for males versus female running data from 17 to 62 years old. The data insists that gender, age, and elevation has an impact on running.  There are outliers which is why the average race pace was taken versus the actual race pace.  Taking the average accounts for the ages that generally perform better than others.
 #### ![Average Race Paces in Virginia for 31 mile runs](Images/real_avg_race_pace_virginia.png)
 #### ![Average Race Paces in Colorado for 31 mile runs](Images/real_avg_race_pace_colorado.png)
 
@@ -88,7 +95,7 @@ A box cox transformation was used for this predictive model ultimately. It gives
 - Calculated Mean Squared Error: 0.012979636721184285
 - The calculated MSE was better than the linear regression and log transformation.  This method was more effective at minimizing the descrepancies between actual and predicted race paces.
 
-- When looking at the residuals plot we see the plot is more homoscedastic compared to the other residual plots for the linear regression models and log transformation.  How does the data look now compared to the fit of data compared to the predictions?
+- When looking at the residuals plot we see the plot is more homoscedastic compared to the other residual plots for the linear regression models and log transformation.  How does the data look now compared to the fit of data to the predictions?
 #### ![Linear Regression with Box Cox Transformation](Images/box_cox_res_plot.png)
 
 - The model created a better fit of the data.  Ultimately allowing the analysis of predicted paces fitting better.  There is now significant improvement to the accuracy and reliability compared to using untransformed linear regression.
@@ -101,10 +108,18 @@ A box cox transformation was used for this predictive model ultimately. It gives
 
 ### Present key insights
 
+- Lower elevation shows higher running paces
+- Consistent trend that Males maintain higher paces at all distances, elevation, and age
+- The average difference of males vs female paces narrows at longer distances, indicating similar endurance capacities for ultra-distances
+- As distance increases the paces decrease
+- Both genders show peak performance in their twenties with pace declining with age
+- Males and females generally perform better in their late twenties at a lower elevation and perform better in their mid twenties at higher elevation.
+- Males and females should be given different allocations of time to finish a race based off of the elevation, distance, and age.
+
     
 
 ### Tell us what you recommend
-- Recommend gathering racing data at distances shorter than 26 miles.
+- Recommend gathering racing data at distances shorter than 26 miles.  Where are the racers coming from when running different altitudes?  Are they coming from an area where they are already acclimated for high altitude?
 
 ### Tell us what future areas you might want/need to study
 - Consider studying Terrain type of events, i.e. desert, mountain, forest, beach and seasons to see if that affects runners performance.  See if adding weight and height can affect if possible.
