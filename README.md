@@ -96,6 +96,7 @@ A box cox transformation was used for this predictive model ultimately. It gives
 - The calculated MSE was better than the linear regression and log transformation.  This method was more effective at minimizing the descrepancies between actual and predicted race paces.
 
 - When looking at the residuals plot we see the plot is more homoscedastic compared to the other residual plots for the linear regression models and log transformation.  How does the data look now compared to the fit of data to the predictions?
+
 #### ![Linear Regression with Box Cox Transformation](Images/box_cox_res_plot.png)
 
 - The model created a better fit of the data.  Ultimately allowing the analysis of predicted paces fitting better.  There is now significant improvement to the accuracy and reliability compared to using untransformed linear regression.
@@ -104,19 +105,28 @@ A box cox transformation was used for this predictive model ultimately. It gives
 
 ## Predicted Outcomes
 
+- The predictive outcomes of running pace shows predicted race paces in miles per hour for Males Versus Females at a low Elevation at Fort Eisenhower of 446 feet versus a high elevation at Fort Carson of 5680 feet. The age range is from 17 to 62 years old.
 
+- The first model shows racers running a 31 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.42 mph and 0.51 mph at high altitude.  Males generally run faster than females and as age increases the pace decreases.
+
+#### ![Predicted pace for 31 miles](Images/pred_pace_31_mile.png)
+
+- The second model shows racers running a 50 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.33 mph and 0.21 mph at low altitude.  The trends are the same as 31 mile distances.
+
+#### ![Predicted pace for 50 miles](Images/pred_pace_50_mile.png)
+
+- The third model shows racers running a 100 mile race and gives predicted average race pace. The average difference between the average pace for males and females at low altitude are 0.20 and 0.21 mph at high altitude.  The trends are the same as the 31 mile distances and 50 mile distances.  However, we can see the average difference get smaller and the race paces narrow as the distances increase.
+
+#### ![Predicted pace for 100 miles](Images/pred_pace_100_mile.png)
 
 ### Present key insights
 
-- Lower elevation shows higher running paces
-- Consistent trend that Males maintain higher paces at all distances, elevation, and age
-- The average difference of males vs female paces narrows at longer distances, indicating similar endurance capacities for ultra-distances
-- As distance increases the paces decrease
-- Both genders show peak performance in their twenties with pace declining with age
-- Males and females generally perform better in their late twenties at a lower elevation and perform better in their mid twenties at higher elevation.
-- Males and females should be given different allocations of time to finish a race based off of the elevation, distance, and age.
+- Consistent trend that Males maintain higher paces at all distances, elevation, and age.
+- The average difference of males vs female paces narrows at longer distances, indicating similar endurance capacities for ultra-distances, and as distance increases the pace decreases.
+- Both genders generally show peak performance in their twenties with pace declining with age.
+- Males and females run faster, on average, in their late twenties to early thirties at lower elevation. They run faster, on average, in their early to mid twenties at higher elevation.
+- Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.
 
-    
 
 ### Tell us what you recommend
 - Recommend gathering racing data at distances shorter than 26 miles.  Where are the racers coming from when running different altitudes?  Are they coming from an area where they are already acclimated for high altitude?
