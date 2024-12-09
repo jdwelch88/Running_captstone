@@ -1,11 +1,12 @@
 # Running_captstone
 
-Running data - For Capstone
+Affects on Running Performance - Galvanized Capstone Project
 
-## Project Proposal
+## Project Proposal to predict Race Pace based on specific variables
 Do males and females need to be offered different allocations of time to finish an ultra marathon race due to elevation?
 Does distance, elevation, and age affect running performance?
 
+A caveat to the data is that we already know average race pace, however, can we predict average race pace given specific variables?
 
 ## Background & Motivation
 As an avid runner, ultra marathon running is a passion of mine.  Ultra Marathon running is a particularly unique sporting event that requires endurance and stamina as well as proper training. Ultra Marathon running is particularly interesting when attempting to look at the data for races across multiple variables as to why others run better or worse.
@@ -42,18 +43,41 @@ I had four individual null hypothesis ran in regards to my data to understand if
 In all of my hypothesis above I failed to reject all my null hypothesis meaning all data had significant affects on my data.
 
 
-## Results
+## Analysis
 
-- Average Race Paces in Virginia for 31 mile runs
+- Average Race Paces in Virginia and Colorado for 31 mile runs
+    - This shows the actual data of events at 489 feet of elevation for 31 mile runs as well as events at 6800 feet.  We are comparing Virginia versus Colorado in this instance for males versus female running data from 17 to 62 years old. The data insists that gender, age, and elevation has an impact on running.
 #### ![Average Race Paces in Virginia for 31 mile runs](Images/real_avg_race_pace_virginia.png)
+#### ![Average Race Paces in Colorado for 31 mile runs](Images/real_avg_race_pace_colorado.png)
+
+
+## Regression Analysis
+- When conducting the regression analysis, Linear regression and Log transformation were both first tested.  The residuals plot of predicted values show a cone shape showing heteroscedasticity and plots of predicted vs actual values shows invalid predictions.  A Box Cox transformation was ultimately used due to it's homoscedasticity in the residuals and analysis of the predicted values versus the actual values.
+
+### Linear Regression
+
+Upon first utilizing the Linear Regression model, it was utilized due to my target data being a continuous set of data.
+    - Calculated Mean Squared Error: 0.927758784169388
+
+- The Linear Regression plot of the residuals below shows a heteroscedastic model, implying that my model might not be able to be accurate.  It shows a cone shape and the shape should be more homoscedastic.  This implies as the values go up for my prediction the less accurate they may be.
+
+#### ![Linear Regression Residuals Plot](Images/linear_reg_plot.png)
+
+- In this model of the linear regression predictions we see that our predicted values of the average race pace are linear compared to the actual values.  This will show inconsistent results and ultimately show improper analysis fo the data. The thought process behind using another method is to find a transformation or regression model that will show more accurate results.
+
+#### ![Linear Regression Residuals Plot](Images/linear_reg_fit.png)
+
+### Linear Regression with Log Transformation
+
+### Linear Regression with Box Cox Transformation
+
+
+## Predicted Outcomes
 
 
 
 ### Present key insights
-    - The data attempts to predict average race pace by gender, elevation, and distance of a race.
-    - Males generally run faster than females on average.
-    - Elevation, age, gender, and distance affect average race pace.
-    - Races below marathons may be skewed due to not having data for those distances.  Adding more data to those lower distances can increase the accuracy of the predicted model.
+
     
 
 ### Tell us what you recommend
