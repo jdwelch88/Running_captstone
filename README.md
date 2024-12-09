@@ -57,7 +57,7 @@ In all of my hypothesis above I failed to reject all my null hypothesis meaning 
 ### Linear Regression
 
 Upon first utilizing the Linear Regression model, it was utilized due to my target data being a continuous set of data.
-    - Calculated Mean Squared Error: 0.927758784169388
+- Calculated Mean Squared Error: 0.927758784169388
 
 - The Linear Regression plot of the residuals below shows a heteroscedastic model, implying that my model might not be able to be accurate.  It shows a cone shape and the shape should be more homoscedastic.  This implies as the values go up for my prediction the less accurate they may be.
 
@@ -65,9 +65,23 @@ Upon first utilizing the Linear Regression model, it was utilized due to my targ
 
 - In this model of the linear regression predictions we see that our predicted values of the average race pace are linear compared to the actual values.  This will show inconsistent results and ultimately show improper analysis fo the data. The thought process behind using another method is to find a transformation or regression model that will show more accurate results.
 
-#### ![Linear Regression Residuals Plot](Images/Linear_Reg_fit.png)
+#### ![Linear Regression Fit](Images/Linear_Reg_fit.png)
 
 ### Linear Regression with Log Transformation
+
+A log transformation of the linear regression model was used to see if the data would fit better compared to my actual data.
+- Calculated Mean Squared Error: 0.04051226254795319
+
+While the MSE of this model was better fit to my data, it still showed linearity and was not best fit for the predictions.
+
+- The linear regression plot with log transformation of the residuals below still showed heteroscedasticity in the model.
+
+#### ![Linear Regression with Log Transformation Residual Plot](Images/log_trans_res_plot.png)
+
+- We also see the same fit of actual data versus the predicted data from the transformation and looks very similar to the linear regression model.
+
+#### ![Linear Regression with Log Transformation Fit](Images/log_trans_reg_fit.png)
+
 
 ### Linear Regression with Box Cox Transformation
 
