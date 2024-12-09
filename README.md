@@ -119,13 +119,16 @@ A box cox transformation was used for this predictive model ultimately. It gives
 
 #### ![Predicted pace for 100 miles](Images/pred_pace_100_mile.png)
 
-### Present key insights
+### Key Insights and Conclusion
+
+All factors in my features affect a runners average pace: gender, distance, age, and elevation.
 
 - Consistent trend that Males maintain higher paces at all distances, elevation, and age.
 - The average difference of males vs female paces narrows at longer distances, indicating similar endurance capacities for ultra-distances, and as distance increases the pace decreases.
 - Both genders generally show peak performance in their twenties with pace declining with age.
 - Males and females run faster, on average, in their late twenties to early thirties at lower elevation. They run faster, on average, in their early to mid twenties at higher elevation.
-- Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.
+
+Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.  Coaches and athletes can utilize this data to create flexible training regimes for runners based off elevation, gender, age, and distance they are training for.
 
 
 ### Recommendations
