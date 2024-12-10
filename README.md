@@ -41,14 +41,14 @@ To make this more focused to the military I am choosing high and low elevations 
 - I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb (discarded for my main analysis)
 
 ## Hypothesis
-I had four individual null hypothesis ran in regards to my data to understand if it affects my target data or not (average race pace).
+I had four individual hypotheses ran in regards to my data to understand if it affects my target data or not (average race pace).
 
-### Null Hypothesis
-    - Gender does not signficantly affects average race pace.
-    - Age does not significantly affects average race pace.
-    - Average State Elevation does not affects average race pace.
-    - Distance does not affects average race pace.
-In all of my hypothesis above I failed to reject all my null hypothesis meaning all data had significant affects on my data.
+### Hypothesis
+    - Gender signficantly affects average race pace.
+    - Age significantly affects average race pace.
+    - Average State Elevation significantly affects average race pace.
+    - Distance significantly affects average race pace.
+In all of my hypotheses above, all statements were in fact true in regards to my data when comparing race pace.
 
 ## MVP
 
@@ -75,7 +75,7 @@ In all of my hypothesis above I failed to reject all my null hypothesis meaning 
 
 
 ## Regression Analysis
-- When conducting the regression analysis, Linear regression and Log transformation were both first tested.  The residuals plot of predicted values show a cone shape showing heteroscedasticity and plots of predicted vs actual values shows invalid predictions.  A Box Cox transformation was ultimately used due to it's homoscedasticity in the residuals and analysis of the predicted values versus the actual values.  Real data versus predicted data is compared from race paces versus age to show how each model compared to each other.  Multiple models were tested, however, the box cox transformation made the best estimate of predictions for analysis.
+- When conducting the regression analysis, Linear regression was first tested.  The residuals plot of predicted values show a cone shape showing heteroscedasticity and plots of predicted vs actual values shows invalid predictions.  A Box Cox transformation was ultimately used due to it's homoscedasticity in the residuals and analysis of the predicted values versus the actual values.  Real data versus predicted data is compared from race paces versus age to show how each model compared to each other.  Multiple models were tested, however, the box cox transformation made the best estimate of predictions for analysis.
 
 ### Linear Regression
 
@@ -90,24 +90,12 @@ Upon first utilizing the Linear Regression model, it was utilized due to my targ
 
 #### ![Linear Regression Fit](Images/Linear_Reg_fit.png)
 
-### Linear Regression with Log Transformation
-
-A log transformation of the linear regression model was used to see if the data would fit better compared to my actual data.
-- Calculated Mean Squared Error: 0.04051226254795319
-
-While the MSE of this model was better fit to my data, it still showed linearity and was not best fit for the predictions.
-
-- The linear regression plot with log transformation of the residuals below still showed heteroscedasticity in the model but did fit better.
-
-#### ![Linear Regression with Log Transformation Residual Plot](Images/log_trans_res_plot.png)
-
-- We also see the same fit of actual data versus the predicted data from the transformation and looks very similar to the linear regression model.  A better transformation is needed for better and more accurate predictions.
-
-#### ![Linear Regression with Log Transformation Fit](Images/log_trans_reg_fit.png)
-
 ### Linear Regression with Box Cox Transformation
 
 A box cox transformation was used for this predictive model ultimately. It gives normality of residuals, more constant variance (Homoscedasticity, better fit, and reduced MSE).
+
+The data becomes more normally distributed and has constant variance. The resulting linear regression model meets the assumptions better, leading to more accurate and reliable predictions.
+
 - Calculated Mean Squared Error: 0.012979636721184285
 - The calculated MSE was better than the linear regression and log transformation.  This method was more effective at minimizing the descrepancies between actual and predicted race paces.
 
