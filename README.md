@@ -13,13 +13,6 @@ As an avid runner, ultra marathon running is a passion of mine.  Ultra Marathon 
 
 ## Data
 
-- To see how my data was manipulated and transformed please look in the data folder at UM_data_top_100.csv. 
-- To see how the data was cleaned check the cleaning_data.ipynb
-- My initial hypothesis testing was conducted in running_hypothesis.ipynb
-- My full analysis was conducted in all_100_running_hypothesis.ipynb
-- My full regression analysis for my predictive model was conducted in the box_cox.ipynb
-- I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb
-
 Data was downloaded from Kaggle.com (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running)
 
 I cleaned the data to only pull the top 100 Ultra Marathon events by most participants in the United states.  I had to individually add the average state elevation of each race which included 25 states.
@@ -36,8 +29,14 @@ I cleaned the data to only pull the top 100 Ultra Marathon events by most partic
 Data to Focus on for features: Gender, Age, Average State Elevation (feet), and distance (miles).
 Target data: mph (average race pace)
 
-To make this more focused to the military I am choosing high and low elevations of unique military bases.
+To make this more focused to the military I am choosing high and low elevations of unique military bases.  Fort Eisenhower versus Fort Carson.
 
+- To see how my data was manipulated and transformed please look in the data folder at UM_data_top_100.csv. 
+- To see how the data was cleaned check the cleaning_data.ipynb
+- My initial hypothesis testing was conducted in running_hypothesis.ipynb
+- My full analysis was conducted in all_100_running_hypothesis.ipynb
+- My full regression analysis for my predictive model was conducted in the box_cox.ipynb
+- I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb
 
 ## Hypothesis
 I had four individual null hypothesis ran in regards to my data to understand if it affects my target data or not (average race pace).
