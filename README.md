@@ -33,10 +33,10 @@ To make this more focused to the military I am choosing high and low elevations 
 
 - To see how my data was manipulated and transformed please look in the data folder at UM_data_top_100.csv. 
 - To see how the data was cleaned check the cleaning_data.ipynb
-- My initial hypothesis testing was conducted in running_hypothesis.ipynb
+- My initial hypothesis testing was conducted in running_hypothesis.ipynb (most information discarded for my main analysis)
 - My full analysis was conducted in all_100_running_hypothesis.ipynb
 - My full regression analysis for my predictive model was conducted in the box_cox.ipynb
-- I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb
+- I have one notebook checking how seasons affect running data in the adding_seasonal_data.ipynb (discarded for my main analysis)
 
 ## Hypothesis
 I had four individual null hypothesis ran in regards to my data to understand if it affects my target data or not (average race pace).
@@ -121,15 +121,15 @@ A box cox transformation was used for this predictive model ultimately. It gives
 
 - The predictive outcomes of running pace shows predicted race paces in miles per hour for Males Versus Females at a low Elevation at Fort Eisenhower of 446 feet versus a high elevation at Fort Carson of 5680 feet. The age range is from 17 to 62 years old.
 
-- The first model shows racers running a 31 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.42 mph and 0.51 mph at high altitude.  Males generally run faster than females and as age increases the pace decreases.
+- The first model shows racers running a 31 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.42 mph and 0.51 mph at high altitude. The average difference gap is wide for this race distance.  Males generally run faster than females and as age increases the pace decreases.  Males and females run faster on average at lower altitudes in their late twenties while they run faster at higher altitudes in their mid twenties.
 
 #### ![Predicted pace for 31 miles](Images/pred_pace_31_mile.png)
 
-- The second model shows racers running a 50 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.33 mph and 0.21 mph at low altitude.  The trends are the same as 31 mile distances.
+- The second model shows racers running a 50 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.33 mph and 0.21 mph at low altitude.  The average difference gap did get more narrow. The trends are the same as 31 mile distances for ages and altitude for how fast they run on average.
 
 #### ![Predicted pace for 50 miles](Images/pred_pace_50_mile.png)
 
-- The third model shows racers running a 100 mile race and gives predicted average race pace. The average difference between the average pace for males and females at low altitude are 0.20 and 0.21 mph at high altitude.  The trends are the same as the 31 mile distances and 50 mile distances.  However, we can see the average difference get smaller and the race paces narrow as the distances increase.
+- The third model shows racers running a 100 mile race and gives predicted average race pace. The average difference between the average pace for males and females at low altitude are 0.20 and 0.21 mph at high altitude.  The trends are the same as the 31 mile distances and 50 mile distances.  The average difference in race pace is more narrow suggesting that it is equally difficult to run an extremely long race for both males and females, potentially showing the need for stamina and endurance as well as physiological capabilities. However, we can see the average difference get smaller and the race paces narrow as the distances increase. The fastest average pace for males and females at low altitude are in their late twenties to early thirties and at high altitude their faster paces is in their early to mid twenties.
 
 #### ![Predicted pace for 100 miles](Images/pred_pace_100_mile.png)
 
