@@ -11,6 +11,8 @@ A caveat to the data is that we already know average race pace, however, can we 
 ## Background & Motivation
 As an avid runner, ultra marathon running is a passion of mine.  Ultra Marathon running is a particularly unique sporting event that requires endurance and stamina as well as proper training. Ultra Marathon running is particularly interesting when attempting to look at the data for races across multiple variables as to why others run better or worse.
 
+Military members may have to live in a high altitude area versus a low altitude area.  I want to figure out if training for Soldiers needs to be different based off gender, age, and altitude.  I want to use distance as a factor to see how that affects running as well.
+
 ## Data
 
 Data was downloaded from Kaggle.com (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running)
