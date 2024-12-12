@@ -138,6 +138,13 @@ Runners should be given different allocations of time to finish a race based off
 ### Recommendations
 - Recommend gathering racing data at distances shorter than 26 miles.  Where are the racers coming from when running different altitudes?  Are they coming from an area where they are already acclimated for high altitude?
 
+- Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.
+
+- How does seasonal data affect runners time?
+
+- Recommend looking at cardio event results in Army Combat Fitness Test for Fort Eisenhower versus Fort Carson to see if there are any instances where elevation is a concern in regards to training.  Test initial acclimation versus fully acclimated.
+
+
 ### Future areas of study
 - Consider studying Terrain type of events, i.e. desert, mountain, forest, beach and seasons to see if that affects runners performance.  See if adding weight and height can affect if possible.
 - Ultimately to keep this military related, do an analysis of the ACFT two mile run for each age group of males versus females at Fort Carson and Fort Eisenhower to compare how each group does. Include height and weight.
