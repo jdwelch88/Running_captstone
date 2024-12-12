@@ -1,6 +1,6 @@
 # Ultra Marathon Running
 
-Predicting Ultra Marathon Race Pace: A Gender, Elevation, and Distance Analysis
+Predicting Ultra Marathon Race Pace: A Gender, Elevation, Age, and Distance Analysis
 
 ## Project Proposal to predict Race Pace based on specific variables
 Do males and females need different time allocations to finish an ultra marathon race due to elevation?
