@@ -127,15 +127,15 @@ The data becomes more normally distributed and has constant variance. The result
 
 - The first model shows racers running a 31 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.42 mph and 0.51 mph at high altitude. The average difference gap is wide for this race distance.  Males generally run faster than females and as age increases the pace decreases.  Males and females run faster on average at lower altitudes in their late twenties while they run faster at higher altitudes in their mid twenties.
 
-#### ![Predicted pace for 31 miles](Images/pred_pace_31_mile.png)
+#### ![Predicted pace for 31 miles](Images/31_mile_pred.png)
 
 - The second model shows racers running a 50 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.33 mph and 0.21 mph at low altitude.  The average difference gap did get more narrow. The trends are the same as 31 mile distances for ages and altitude for how fast they run on average.
 
-#### ![Predicted pace for 50 miles](Images/pred_pace_50_mile.png)
+#### ![Predicted pace for 50 miles](Images/50_mile_pred.png)
 
 - The third model shows racers running a 100 mile race and gives predicted average race pace. The average difference between the average pace for males and females at low altitude are 0.20 and 0.21 mph at high altitude.  The trends are the same as the 31 mile distances and 50 mile distances.  The average difference in race pace is more narrow suggesting that it is equally difficult to run an extremely long race for both males and females, potentially showing the need for stamina and endurance as well as physiological capabilities. However, we can see the average difference get smaller and the race paces narrow as the distances increase. The fastest average pace for males and females at low altitude are in their late twenties to early thirties and at high altitude their faster paces is in their early to mid twenties.
 
-#### ![Predicted pace for 100 miles](Images/pred_pace_100_mile.png)
+#### ![Predicted pace for 100 miles](Images/100_mile_pred.png)
 
 ### Key Insights and Conclusion
 
