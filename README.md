@@ -1,17 +1,17 @@
 # Ultra Marathon Running
 
-Affects on Running Performance - Galvanized Capstone Project
+Predicting Ultra Marathon Race Pace: A Gender, Elevation, and Distance Analysis
 
 ## Project Proposal to predict Race Pace based on specific variables
-Do males and females need to be offered different allocations of time to finish an ultra marathon race due to elevation?
-Does distance, elevation, and age affect running performance?
+Do males and females need different time allocations to finish an ultra marathon race due to elevation?
+How do distance, elevation, age, and elevation affect running performance?
 
 A caveat to the data is that we already know average race pace, however, can we predict average race pace given specific variables?
 
 ## Background & Motivation
 As an avid runner, ultra marathon running is a passion of mine.  Ultra Marathon running is a particularly unique sporting event that requires endurance and stamina as well as proper training. Ultra Marathon running is particularly interesting when attempting to look at the data for races across multiple variables as to why others run better or worse.
 
-Military members may have to live in a high altitude area versus a low altitude area.  I want to figure out if training for Soldiers needs to be different based off gender, age, and altitude.  I want to use distance as a factor to see how that affects running as well.
+Military members may live in different altitude areas, which could impact their performance. By analyzing data based on gender, age, and altitude, we can determine if training protocols need to be adjusted for optimal performance.
 
 ## Data
 
@@ -44,7 +44,7 @@ To make this more focused to the military I am choosing high and low elevations 
 I had four individual hypotheses ran in regards to my data to understand if it affects my target data or not (average race pace).
 
 ### Hypothesis
-    - Gender signficantly affects average race pace.
+    - Gender significantly affects average race pace.
     - Age significantly affects average race pace.
     - Average State Elevation significantly affects average race pace.
     - Distance significantly affects average race pace.
@@ -52,10 +52,13 @@ In all of my hypotheses above, all statements were in fact true in regards to my
 
 ## MVP
 
-    - Set data to specific units (intengers or floats) and not strings as they are continuous.  
-    - Set males and females to zeros and ones for gender.
-    - Compare linear regression, log model transformation, and other regression models to pick the best model for analysis.
-    - Use best model to perform a predictive analysis on average race pace from my features.
+- Convert data to specific units (integers or floats) instead of strings as they are continuous.
+
+- Set gender data to binary values (0 for females, 1 for males).
+
+- Compare linear regression, log model transformation, and other regression models to determine the best model for analysis.
+
+- Use the best model to perform a predictive analysis on average race pace from the selected features.
 
 
 ## Analysis
@@ -69,7 +72,12 @@ In all of my hypotheses above, all statements were in fact true in regards to my
 #### ![Pair plot of features](Images/pair_plot_features.png)
 
 - Average Race Paces in Virginia and Colorado for 31 mile runs
-    - This shows the actual data of events at 489 feet of elevation for 31 mile runs as well as events at 6800 feet.  We are comparing Virginia versus Colorado in this instance for males versus female running data from 17 to 62 years old. The data insists that gender, age, and elevation has an impact on running.  There are outliers which is why the average race pace was taken versus the actual race pace.  Taking the average accounts for the ages that generally perform better than others.
+    - Comparison of race data at 489 feet (Virginia) vs. 6800 feet (Colorado).
+
+    - The data indicates that gender, age, and elevation impact running performance.
+
+    - Outliers are accounted for by taking the average race pace, which provides a more reliable comparison.
+
 #### ![Average Race Paces in Virginia for 31 mile runs](Images/real_avg_race_pace_virginia.png)
 #### ![Average Race Paces in Colorado for 31 mile runs](Images/real_avg_race_pace_colorado.png)
 
@@ -109,7 +117,7 @@ The data becomes more normally distributed and has constant variance. The result
 
 ## Predicted Outcomes
 
-- The predictive outcomes of running pace shows predicted race paces in miles per hour for Males Versus Females at a low Elevation at Fort Eisenhower of 446 feet versus a high elevation at Fort Carson of 5680 feet. The age range is from 17 to 62 years old.
+- The predictive outcomes of running pace show predicted race paces in miles per hour for males versus females at a low elevation (Fort Eisenhower at 446 feet) versus a high elevation (Fort Carson at 5680 feet). The age range is from 17 to 62 years old.
 
 - The first model shows racers running a 31 mile race and gives predicted average race pace.  The average difference between the average pace for males and females at low altitude are 0.42 mph and 0.51 mph at high altitude. The average difference gap is wide for this race distance.  Males generally run faster than females and as age increases the pace decreases.  Males and females run faster on average at lower altitudes in their late twenties while they run faster at higher altitudes in their mid twenties.
 
@@ -125,7 +133,7 @@ The data becomes more normally distributed and has constant variance. The result
 
 ### Key Insights and Conclusion
 
-All factors in my features affect a runners average pace: gender, distance, age, and elevation.
+All factors in my features affect a runner's average pace: gender, distance, age, and elevation.
 
 - Consistent trend that Males maintain higher paces at all distances, elevation, and age.
 - The average difference of males vs female paces narrows at longer distances, indicating similar endurance capacities for ultra-distances, and as distance increases the pace decreases.
@@ -136,22 +144,21 @@ Runners should be given different allocations of time to finish a race based off
 
 
 ### Recommendations
-- Recommend gathering racing data at distances shorter than 26 miles.  Where are the racers coming from when running different altitudes?  Are they coming from an area where they are already acclimated for high altitude?
+- Gather racing data at distances shorter than 26 miles. Investigate where racers come from regarding different altitudes. Are they already acclimated to high altitude?
 
-- Runners should be given different allocations of time to finish a race based off of elevation, distance, gender, and age.
+- Runners should be given different allocations of time to finish a race based on elevation, distance, gender, and age.
 
-- How does seasonal data affect runners time?
+- Examine how seasonal data affects runners' times.
 
-- Recommend looking at cardio event results in Army Combat Fitness Test for Fort Eisenhower versus Fort Carson to see if there are any instances where elevation is a concern in regards to training.  Test initial acclimation versus fully acclimated.
-
+- Check cardio event results in the Army Combat Fitness Test for Fort Eisenhower versus Fort Carson to see if elevation concerns training. Compare initial acclimation versus fully acclimated states.
 
 ### Future areas of study
-- Consider studying Terrain type of events, i.e. desert, mountain, forest, beach and seasons to see if that affects runners performance.  See if adding weight and height can affect if possible.
-- Ultimately to keep this military related, do an analysis of the ACFT two mile run for each age group of males versus females at Fort Carson and Fort Eisenhower to compare how each group does. Include height and weight.
+- Study terrain types (desert, mountain, forest, beach) and seasons to see their impact on runners' performance. Consider adding weight and height as factors if possible.
 
+- Analyze the ACFT two-mile run for each age group of males versus females at Fort Carson and Fort Eisenhower. Include height and weight data.
 
 ## Contributing
-To contribute to this project, continue to add where to find pertinent data about each race to enhance further exploration of data analysis of Ultra Marathon Running.  Continue to provide race data from races ranging from 2 to 13 miles for better predictions.
+To contribute to this project, please continue to add pertinent data about each race to enhance further exploration of ultra marathon running data analysis. Provide race data from races ranging from 2 to 13 miles for better predictions.
 
 ## License
 This project is licensed under the GPL-3.0 License.
