@@ -102,11 +102,11 @@ Upon first utilizing the Linear Regression model, it was utilized due to my targ
 
 A box cox transformation with an xgboost regressor was used for this predictive model ultimately. It gives normality of residuals, more constant variance (Homoscedasticity, better fit, and reduced MSE).
 
-    - XGBoost Regressor improves predictions by handling complex relationships, ranking feature importance, and preventing overfitting.
+- XGBoost Regressor improves predictions by handling complex relationships, ranking feature importance, and preventing overfitting.
 
-    - Combining Box-Cox transformation normalizes data, ensuring constant variance and improved model fit.
+- Combining Box-Cox transformation normalizes data, ensuring constant variance and improved model fit.
 
-    - This approach significantly reduced prediction errors, enhancing the accuracy and reliability of race pace predictions.
+- This approach significantly reduced prediction errors, enhancing the accuracy and reliability of race pace predictions.
 
 The data becomes more normally distributed and has constant variance. The resulting linear regression model meets the assumptions better, leading to more accurate and reliable predictions.
 
